@@ -47,11 +47,11 @@ nav, ul, li, h3 {
 li{
     text-decoration: none;
     font-size: 1rem;
-    background: #BFB4B0;
-    border-radius: 10px;
     padding: 15px;                  
 }
-a{
+header a, footer a{
+    border-radius: 10px;
+    background: #BFB4B0;
     color: black;
     padding: 15px;
     text-decoration: none;
@@ -103,7 +103,7 @@ input,button {
     grid-gap: 15px;
     margin: 15px 0px;
 }
-.tog{
+.mainmenubtn{
     font-size: 1rem;
     background: #BFB4B0;
     padding: 15px; 
@@ -122,21 +122,35 @@ input,button {
         justify-content: left;
 
     }
-    div ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .tog {
+
+    .mainmenubtn {
         display: block;
-        border: 0px;
+        background-color:#e2e2e2;
+        color: black;
+        border: none;
+        cursor: pointer;
+        padding:30px;
+        
     }
-    .mostrar {
-        display: none;
+    .mainmenubtn:hover {
+        background-color:#BFB4B0;
+        }
+    .dropdown {
+        position: relative;
+        display: inline-block;
     }
-    .tog:hover {
-        background-color: #D41200;
+    .dropdown-child {
+        display: none;                  /* Por defecto display none */
+        width: 200px;
+        position: absolute;                 /* Le agrego esto para que no dependa de las otras cajas del documento. Que se pueda poner por encima */
     }
-    .tog:hover + .mostrar {
+    .dropdown-child a {
+        color: black;
+        padding: 20px;
+        text-decoration: none;
         display: block;
+    }
+    .dropdown:hover .dropdown-child {   /* Es un condicional, al estar hover dropdown, le aplica eso a child */
+        display: block;                 /* Cambia display none a display block de child cuando hover */
     }
 }
