@@ -44,7 +44,7 @@ nav, ul, li, h3 {
     margin: 20px;
 }
 
-li{
+li, .tog{
     text-decoration: none;
     font-size: 1rem;
     background: #BFB4B0;
