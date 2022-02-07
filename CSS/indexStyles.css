@@ -117,7 +117,15 @@ input,button {
 }
 
 @media screen and (max-width:920px){
-    
+    header {
+        flex-direction: row;
+        justify-content: left;
+
+    }
+    div ul {
+        display: flex;
+        flex-direction: column;
+    }
     .tog {
         display: block;
         border: 0px;
