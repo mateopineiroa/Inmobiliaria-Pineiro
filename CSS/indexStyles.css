@@ -128,23 +128,21 @@ aside {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     
 }
+
 @media screen and (max-width:1200px) {
     body {
-        width: 100vw;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:920px){
-
-}}
-@media screen and (max-width:650px){
-    .main {                 /* Uso class pues solo productos va a tener sidebar */
+    .main {
         display: grid;
-        grid-template-rows: 1fr 4fr;
-        grid-template-columns: 4fr 1fr;         /* Los elementos se acomodan en orden */
+        grid-template-rows: auto 4fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "a a"
-        "b b";
+        "a"
+        "b";
         grid-gap: 15px;
         margin: 15px 0px;
     }
@@ -156,5 +154,8 @@ aside {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-area: b;
+    }
+    
 }
-}}
+@media screen and (max-width:650px){
+}
