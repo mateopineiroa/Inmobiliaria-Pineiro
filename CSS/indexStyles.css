@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+    font-family: 'roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 70vw;                    /* Media queries */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+
+}
+
+header, footer {
+    display: flex;
+    align-items: center;            /* Alineo verticalmente */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #403A3A;
+}
+h1 {
+    color: #D41200;
+    font-weight: 600;        /* Agregue 100 y 500 pero 200, 400 y 600 son tres diferentes (?) */   
+    display: inline-block;
+    font-size: 1rem;
+    padding: 15px;                  
+    margin: 10px;
+    background: #BFB4B0;
+    border-radius: 10px;
+}
+
+
+nav, ul, li, h3 {
+    display: inline-block;            /* Todos los elementos block deben ser inline */
+}
+
+/* Luego con flexbox pego mi menu a la derecha y alineo el texto verticalmente*/
+
+.title {
+    margin: 20px;
+}
+
+li{
+    text-decoration: none;
+    font-size: 1rem;
+    background: #BFB4B0;
+    border-radius: 10px;
+    padding: 15px;                  
+}
+a{
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+}
+
+img, iframe {
+    width: 100%;
+    max-width: fit-content;
+}
+
+article {
+    padding: 2rem;
+}
+
+section, aside {
+    background: #e2e2e2;
+} 
+
+form {
+    padding: 0rem 1rem;
+}
+input,button {
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.articulos {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 15px;
+}
+.search {
+    padding: 10px;
+    margin: 0px auto 0px auto;          /* No se me centra??? */
+    width: 90%;
+}
+
+/* Media queries??? botón para abrir menú en cierto tamaño? */
+
+/* Cuando sea tamaño tablet o celular, en vez de las opciones esparcidas,
+  será un botón que me despliega un menú
+  */
+.main {                 /* Uso class pues solo productos va a tener sidebar */
+    display: grid;
+    grid-template-columns: 4fr 1fr;         /* Los elementos se acomodan en orden */
+    grid-gap: 15px;
+    margin: 15px 0px;
+}
+.toggle{
+    font-size: 1rem;
+    background: #BFB4B0;
+    padding: 15px; 
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:920){
+    .mostrar {
+        display: none;
+        position: relative;
+        
+    }
+    .toggle {
+        display: inline-block;
+        border: none;
+    }
+    .toggle:hover {
+        background-color: #403A3A;
+    }
+    .toggle:hover + .mostrar {
+        background-color: #D41200;
+        display: block;
+    }
+}}
