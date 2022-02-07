@@ -129,6 +129,10 @@ aside {
     
 }
 
+.tog {
+    display: none;
+}
+
 @media screen and (max-width:1200px) {
     body {
         width: 100%;
@@ -136,6 +140,9 @@ aside {
 }
 
 @media screen and (max-width:920px){
+    .search {
+        width: 40%;
+    }
     .main {
         display: grid;
         grid-template-rows: auto 4fr;
@@ -151,11 +158,17 @@ aside {
         padding: 20px;
     }
     .articulos {
+        padding: 30px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-area: b;
     }
     
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:500px){
+    .search {
+        width: 100%;
+
+    }
+    
 }
