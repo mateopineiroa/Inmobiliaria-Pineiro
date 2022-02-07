@@ -103,7 +103,7 @@ input,button {
     grid-gap: 15px;
     margin: 15px 0px;
 }
-.toggle{
+.tog{
     font-size: 1rem;
     background: #BFB4B0;
     padding: 15px; 
@@ -116,21 +116,19 @@ input,button {
     }
 }
 
-@media screen and (max-width:920){
+@media screen and (max-width:920px){
+    
+    .tog {
+        display: block;
+        border: 0px;
+    }
     .mostrar {
         display: none;
-        position: relative;
-        
     }
-    .toggle {
-        display: inline-block;
-        border: none;
-    }
-    .toggle:hover {
-        background-color: #403A3A;
-    }
-    .toggle:hover + .mostrar {
+    .tog:hover {
         background-color: #D41200;
+    }
+    .tog:hover + .mostrar {
         display: block;
     }
-}}
+}
