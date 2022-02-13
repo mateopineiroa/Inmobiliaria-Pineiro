@@ -40,9 +40,9 @@ nav, ul, li, h3 {
 
 /* Luego con flexbox pego mi menu a la derecha y alineo el texto verticalmente*/
 
-.title {
+/* .title {
     margin: 20px;
-}
+} */
 
 a{
     color: black;
@@ -139,6 +139,7 @@ será un botón que me despliega un menú
     grid-gap: 15px;
     margin: 15px 0px;
 }
+
 aside {
     /* grid-area: a; */
     padding: 20px;
@@ -146,7 +147,6 @@ aside {
 .articulos {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
 }
 
 .mainmenubtn{
