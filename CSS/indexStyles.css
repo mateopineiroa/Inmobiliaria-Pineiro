@@ -44,23 +44,13 @@ nav, ul, li, h3 {
     margin: 20px;
 } */
 
-a{
+a {
     color: black;
     padding: 15px;
     text-decoration: none;
     background: #BFB4B0;
     border-radius: 10px;
 }
-/*
-span {
-    display: inline-block;
-    border-bottom-width: 10px;
-    transition: transform 1s;
-}
-
-a:hover span {
-    transform: scale(1.4);
-} */
 
 .hover-underline-animation {
     display: inline-block;
@@ -86,9 +76,13 @@ a:hover span {
   transform-origin: bottom left;
 }
 
+.presentacion {
+    margin-top: 15px;
+}
+
 img, iframe {
     width: 100%;
-    /* max-width: fit-content; */
+    max-width: fit-content;
 
 }
 
@@ -96,7 +90,7 @@ article {
     padding: 2rem;
 }
 
-section, aside {
+article, aside {
     background: #e2e2e2;
     width: 100%;
     height: 100%;
