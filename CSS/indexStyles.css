@@ -36,6 +36,8 @@ h1 {
     height: 10px;
     display: flex;
     align-items: center;
+/*     height: 50px;
+ */    flex-wrap: nowrap;
 }
 .techo {
     margin: 10px 20px;
