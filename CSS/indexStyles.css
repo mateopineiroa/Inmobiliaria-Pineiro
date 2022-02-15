@@ -60,6 +60,13 @@ h1 {
     border-left: #0e7900 solid 3px;
     transition: all .4s;
 }
+.hovr {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    z-index: 1;
+}
 .logo:hover .paredes {
     top: -6px;
 }
@@ -186,8 +193,7 @@ aside {
 }
 .articulo {
     transition: all .5s;
-    background-color: #0087ca;
-}
+/*     background-color: #0087ca;   Quiero que el texto quede bajo un fondo de color*/}
 .descripcion {
     display: none;
     position: absolute;
