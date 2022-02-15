@@ -18,8 +18,8 @@ header, footer {
     display: flex;
     align-items: center;            /* Alineo verticalmente */
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-wrap: nowrap;
+    padding: 40px;
     background: #403A3A;
 }
 h1 {
@@ -34,28 +34,34 @@ h1 {
 }
 .logo {
     height: 10px;
+    display: flex;
+    align-items: center;
 }
 .techo {
     margin: 10px 20px;
     width: 30px;
     height: 23px;
+    position: relative;
+    top: 5px;
     border: #D41200 solid 3px;
     border-top: none;
+    display: inline-block;
 }
 .paredes {
-/*     display: inline-block;
- */    margin: 10px 20px;
+    display: inline-block;
+    margin: 10px 20px;
     width: 30px;
     height: 30px;
     position: relative;
-    top: -42px;
+    top: 0px;
+    left: -70px;
     transform: rotate(45deg);
     border-top: #0e7900 solid 3px;
     border-left: #0e7900 solid 3px;
     transition: all .4s;
 }
 .logo:hover .paredes {
-    top: -50px;
+    top: -6px;
 }
 
 
