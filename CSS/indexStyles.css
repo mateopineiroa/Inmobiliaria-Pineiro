@@ -32,6 +32,31 @@ h1 {
     background: #BFB4B0;
     border-radius: 10px;
 }
+.logo {
+    height: 10px;
+}
+.techo {
+    margin: 10px 20px;
+    width: 30px;
+    height: 23px;
+    border: #D41200 solid 3px;
+    border-top: none;
+}
+.paredes {
+/*     display: inline-block;
+ */    margin: 10px 20px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -42px;
+    transform: rotate(45deg);
+    border-top: #0e7900 solid 3px;
+    border-left: #0e7900 solid 3px;
+    transition: all .4s;
+}
+.logo:hover .paredes {
+    top: -50px;
+}
 
 
 nav, ul, li, h3 {
