@@ -122,8 +122,8 @@ aside {
     display: none;
     position: absolute;
     font-size: 1rem;
-    bottom: -30px;
-    left: 40px;
+    bottom: -40px;
+    left: 20px;
 }
 .articulo:hover .descripcion {
     display: inline;
