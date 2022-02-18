@@ -45,16 +45,59 @@
             <img src="./img/inm.jpg" alt="Imagen inmobiliaria." class="presentacion-img">
             <p class="presentacion-texto">Lorem Editado 3.0 desde notebook ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum totam, quam sequi mollitia, quae iste consectetur hic, culpa laborum soluta doloribus illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis eveniet, eum magnam mollitia nemo optio deserunt!</p>
         </article>
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> -->
+            
+            
         <div class="main">
             <article class="articulos">     <!-- Casas disponibles. Cada imagen sería un link a una página con los datos detallados(?) -->
                     <div class="articulo uno">
-                        <img src="../img/casa1.jpeg" alt="casa">
+                        <img src="../img/casa1.jpeg" alt="casa" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="descripcion uno"><p>Lorem ipsum dolor sit amet.</p></div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Propiedad Uno</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/casa1.jpeg" alt="casa">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
                     <div class="articulo dos">
-                        <img src="../img/casa2.jpg" alt="casa">
+                        <img src="../img/casa2.jpg" alt="casa"  data-bs-toggle="modal" data-bs-target="#Modal">
                         <div class="descripcion dos"><p>Lorem ipsum dolor sit amet.</p></div>
-                </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Propiedad Dos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/casa2.jpg" alt="casa">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </article>
             <aside>
                 <!-- <h3 class="title">Buscador</h3> -->
