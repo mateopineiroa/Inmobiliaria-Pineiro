@@ -1,15 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+* {
+  font-family: 'roboto', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1rem; }
 
+body {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto; }
 
+.main {
+  /* Uso class pues solo productos va a tener sidebar */
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* Los elementos se acomodan en orden */
+  /* grid-template-areas: 
+    "a a"
+    "b b"; */
+  grid-gap: 15px;
+  margin: 15px 0px; }
 
+img {
+  width: 100%;
+  max-width: fit-content; }
 
+article {
+  padding: 2rem; }
 
+section, article {
+  background: #f8f9fa;
+  width: 100%;
+  height: 100%; }
 
+.presentacion {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
 
-/* Media queries??? botón para abrir menú en cierto tamaño? */
+.presentacion-texto {
+  margin: 20px; }
 
-/* Cuando sea tamaño tablet o celular, en vez de las opciones esparcidas,
-será un botón que me despliega un menú
-*/
+.presentacion-img {
+  width: 100%;
+  max-width: 400px; }
 
+aside {
+  background: #f8f9fa;
+  width: 100%;
+  height: 100%;
+  padding: 20px; }
 
+.articulos {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 15px; }
 
+.search {
+  padding: 10px;
+  margin: 0px auto 0px auto;
+  /* No se me centra??? */
+  width: 90%; }
+
+.articulos {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+.articulo {
+  transition: all .5s;
+  /*     background-color: #0087ca;   Quiero que el texto quede bajo un fondo de color*/ }
+
+.descripcion {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  bottom: -40px;
+  left: 20px; }
+
+.articulo:hover .descripcion {
+  display: inline; }
+
+.articulo:hover {
+  transform: scale(1.3); }
+
+form {
+  padding: 0rem 1rem; }
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 100%; } }
+
+@media screen and (max-width: 920px) {
+  .search {
+    width: 40%; }
+  .main {
+    display: grid;
+    grid-template-rows: auto 4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b";
+    grid-gap: 15px;
+    margin: 15px 0px; }
+  aside {
+    grid-area: a;
+    padding: 20px; }
+  .articulos {
+    padding: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: b; }
+  .mainmenubtn {
+    display: block;
+    background-color: #e2e2e2;
+    color: black;
+    border: none;
+    cursor: pointer; }
+  .mainmenubtn:hover {
+    background-color: #BFB4B0; }
+  .dropdown {
+    position: relative;
+    display: inline-block; }
+  .dropdown-child {
+    display: none;
+    /* Por defecto display none */
+    width: 150px;
+    position: absolute;
+    /* Le agrego esto para que no dependa de las otras cajas del documento. Que se pueda poner por encima */ }
+  .dropdown-child a {
+    color: black;
+    padding: 20px;
+    text-decoration: underline;
+    display: block; }
+  .dropdown:hover .dropdown-child {
+    /* Es un condicional, al estar hover dropdown, le aplica eso a child. No puedo usar hover en botones!!?? */
+    display: block;
+    /* Cambia display none a display block de child cuando hover */ }
+  .presentacion {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 550px) {
+  .search {
+    width: 100%; } }
