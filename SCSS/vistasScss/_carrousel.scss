@@ -1,4 +1,7 @@
-/* .carrousel-item img {
-    object-fit:fill;
+.carousel-img {
+    
+    height: 300px;
+    object-fit:cover;
+    /* Por problemas de interaccion con js, no funcionaba ".carousel-intem img" */
 
-} */
+}

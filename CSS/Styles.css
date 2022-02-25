@@ -22,10 +22,6 @@ body {
   grid-gap: 15px;
   margin: 15px 0px; }
 
-img {
-  width: 100%;
-  max-width: fit-content; }
-
 article {
   padding: 2rem; }
 
@@ -34,10 +30,6 @@ section, article {
   width: 100%;
   height: 100%; }
 
-/* .carrousel-item img {
-    object-fit:fill;
-
-} */
 .presentacion {
   margin-top: 15px;
   display: flex;
@@ -77,8 +69,10 @@ aside {
   grid-template-rows: 1fr 1fr 1fr 1fr; }
 
 .articulo {
-  transition: all .5s;
-  /*     background-color: #0087ca;   Quiero que el texto quede bajo un fondo de color*/ }
+  transition: all .5s; }
+  .articulo img {
+    width: 100%;
+    max-width: fit-content; }
 
 .descripcion {
   display: none;
@@ -93,8 +87,17 @@ aside {
 .articulo:hover {
   transform: scale(1.3); }
 
+.modal-body img {
+  width: 100%;
+  max-width: fit-content; }
+
 form {
   padding: 0rem 1rem; }
+
+.carousel-img {
+  height: 300px;
+  object-fit: cover;
+  /* Por problemas de interaccion con js, no funcionaba ".carousel-intem img" */ }
 
 @media screen and (max-width: 1200px) {
   body {
