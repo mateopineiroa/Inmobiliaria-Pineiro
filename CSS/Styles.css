@@ -34,6 +34,10 @@ section, article {
   width: 100%;
   height: 100%; }
 
+/* .carrousel-item img {
+    object-fit:fill;
+
+} */
 .presentacion {
   margin-top: 15px;
   display: flex;
