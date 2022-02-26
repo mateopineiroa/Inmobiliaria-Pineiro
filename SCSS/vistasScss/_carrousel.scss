@@ -5,3 +5,15 @@
     /* Por problemas de interaccion con js, no funcionaba ".carousel-intem img" */
 
 }
+/* .carousel-control-prev:hover, .carousel-control-next:hover {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,.7) 10%, rgba(255,255,255,0) 30%);
+} */
+
+@media screen and (min-width: 769px) {
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+        background: rgb(0,0,0) !important;
+        background: radial-gradient(circle, rgba(0,0,0,.7) 5%, rgba(255,255,255,0) 40%) !important;
+    }
+    
+}

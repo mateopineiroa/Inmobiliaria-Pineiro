@@ -8,7 +8,7 @@ aside {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-gap: 15px;
@@ -18,10 +18,10 @@ aside {
     margin: 0px auto 0px auto;          /* No se me centra??? */
     width: 90%;
 }
-.articulos {
+/* .articulos {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-}
+} */
 .articulo {
     transition: all .5s;
     img {

@@ -25,7 +25,7 @@ body {
 article {
   padding: 2rem; }
 
-section, article {
+article {
   background: #f8f9fa;
   width: 100%;
   height: 100%; }
@@ -52,8 +52,8 @@ aside {
 .articulos {
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
   grid-gap: 15px; }
@@ -64,10 +64,10 @@ aside {
   /* No se me centra??? */
   width: 90%; }
 
-.articulos {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
-
+/* .articulos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+} */
 .articulo {
   transition: all .5s; }
   .articulo img {
@@ -98,6 +98,15 @@ form {
   height: 300px;
   object-fit: cover;
   /* Por problemas de interaccion con js, no funcionaba ".carousel-intem img" */ }
+
+/* .carousel-control-prev:hover, .carousel-control-next:hover {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,.7) 10%, rgba(255,255,255,0) 30%);
+} */
+@media screen and (min-width: 769px) {
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background: black !important;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 5%, rgba(255, 255, 255, 0) 40%) !important; } }
 
 @media screen and (max-width: 1200px) {
   body {
@@ -150,6 +159,9 @@ form {
   .presentacion {
     flex-wrap: wrap; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 515px) {
   .search {
-    width: 100%; } }
+    width: 100%; }
+  .social {
+    margin-top: 20px !important;
+    /* Pongo important para pisar bootstrap */ } }

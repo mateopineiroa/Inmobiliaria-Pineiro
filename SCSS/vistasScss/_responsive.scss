@@ -63,9 +63,14 @@
     
     }
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:515px){
     .search {
         width: 100%;
-
+    }
+    .social {
+        
+    }
+    .social {
+        margin-top: 20px !important;    /* Pongo important para pisar bootstrap */
     }
 }
