@@ -29,16 +29,16 @@ aside {
             max-width: fit-content;
         }
     }
-    .descripcion {
+    /* .descripcion {
         display: none;
         position: absolute;
         font-size: 1rem;
         bottom: -40px;
-        left: 20px;
+        left: 0px;
     }
     .articulo:hover .descripcion {
         display: inline;
-    }
+    } */
     .articulo:hover {
         transform: scale(1.3);
     }
