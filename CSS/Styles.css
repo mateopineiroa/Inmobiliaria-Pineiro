@@ -11,17 +11,6 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.main {
-  /* Uso class pues solo productos va a tener sidebar */
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  /* Los elementos se acomodan en orden */
-  /* grid-template-areas: 
-    "a a"
-    "b b"; */
-  grid-gap: 15px;
-  margin: 15px 0px; }
-
 article {
   padding: 2rem; }
 
@@ -33,7 +22,7 @@ article {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca; }
+  color: #046b00; }
 
 .hover-underline-animation:after {
   content: '';
@@ -43,7 +32,7 @@ article {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #046b00;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out; }
 
@@ -97,21 +86,32 @@ aside {
     max-width: fit-content; }
 
 /* .descripcion {
-        display: none;
-        position: absolute;
-        font-size: 1rem;
-        bottom: -40px;
-        left: 0px;
-    }
-    .articulo:hover .descripcion {
-        display: inline;
-    } */
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    bottom: -40px;
+    left: 0px;
+}
+.articulo:hover .descripcion {
+    display: inline;
+} */
 .articulo:hover {
   transform: scale(1.3); }
 
 .modal-body img {
   width: 100%;
   max-width: fit-content; }
+
+.main {
+  /* Uso class pues solo productos va a tener sidebar */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* Los elementos se acomodan en orden */
+  /* grid-template-areas: 
+    "a a"
+    "b b"; */
+  grid-gap: 15px;
+  margin: 15px 0px; }
 
 form {
   padding: 0rem 1rem; }
@@ -130,7 +130,7 @@ form {
     background: black !important;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 5%, rgba(255, 255, 255, 0) 40%) !important; } }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
   body {
     width: 100%; } }
 

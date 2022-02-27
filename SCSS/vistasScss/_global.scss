@@ -12,13 +12,3 @@ body {
     
 }
 
-.main {                 /* Uso class pues solo productos va a tener sidebar */
-    display: grid;
-    grid-template-columns: 4fr 1fr;         /* Los elementos se acomodan en orden */
-    /* grid-template-areas: 
-    "a a"
-    "b b"; */
-    grid-gap: 15px;
-    margin: 15px 0px;
-}
-
