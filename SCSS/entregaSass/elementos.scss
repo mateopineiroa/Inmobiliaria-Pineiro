@@ -1,0 +1,17 @@
+$colores:(
+    inicio: #eeff00,
+    productos: #09ff00,
+    proyectos: #03adb3,
+    servicios: #0003b1,
+    contacto: #ff26f4,
+);
+
+@each $seccion,$color in $colores {
+    .#{$seccion}{
+        color: #{$color};
+    }
+    .#{$seccion}:after{
+        background-color: #{$color};
+    }
+
+}
