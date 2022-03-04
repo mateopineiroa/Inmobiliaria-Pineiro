@@ -1,17 +1,53 @@
-$colores:(
+$colores:(                                                                  /* map */
     inicio: #eeff00,
     productos: #09ff00,
     proyectos: #03adb3,
     servicios: #0003b1,
-    contacto: #ff26f4,
+    contacto: #6e2d6b,
 );
 
-@each $seccion,$color in $colores {
+.inicio {
+    display: inline-block;
+    position: relative;
+}
+.inicio:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.animation:hover .inicio:after {            /* Cuando esta hover el anchor, le aplico la animacion al span */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+@each $seccion,$color in $colores {                                         /* each */
     .#{$seccion}{
+        @extend .inicio;                                                    /* extend */
         color: #{$color};
     }
     .#{$seccion}:after{
         background-color: #{$color};
+        @extend .inicio:after;                                      /* extend */
     }
+    
+}
 
+.contacto{
+    @extend .inicio;
+    color: #ff26f4;
+}
+.contacto:after{
+    background-color: map-get($colores, #ff26f4);                       /* map-get */
+    @extend .inicio:after;
+}
+
+@mixin margPad($margin,$padding) {                                                      /* mixin, se aplica en global */
+    margin: $margin;
+    padding: $padding;
 }

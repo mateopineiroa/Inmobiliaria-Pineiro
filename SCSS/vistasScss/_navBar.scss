@@ -1,9 +1,9 @@
-.hover-underline-animation {
+/* .hover-underline-animation {
     display: inline-block;
     position: relative;
-  }
+  } */
 
-.hover-underline-animation:after {
+/* .hover-underline-animation:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -13,10 +13,10 @@
   left: 0;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-}
+} */
 
-.animation:hover .hover-underline-animation:after {    /* Cuando esta hover el anchor, le aplico la animacion al span */
+/* .animation:hover .hover-underline-animation:after {          Cuando esta hover el anchor, le aplico la animacion al span
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 

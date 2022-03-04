@@ -1,38 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
-.inicio {
+.inicio, .contacto, .productos, .proyectos, .servicios {
+  display: inline-block;
+  position: relative; }
+
+.inicio:after, .contacto:after, .productos:after, .proyectos:after, .servicios:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.animation:hover .inicio:after, .animation:hover .contacto:after, .animation:hover .productos:after, .animation:hover .proyectos:after, .animation:hover .servicios:after {
+  /* Cuando esta hover el anchor, le aplico la animacion al span */
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* each */
+.inicio, .contacto, .productos, .proyectos, .servicios {
+  /* extend */
   color: #eeff00; }
 
-.inicio:after {
-  background-color: #eeff00; }
+.inicio:after, .contacto:after, .productos:after, .proyectos:after, .servicios:after {
+  background-color: #eeff00;
+  /* extend */ }
 
+/* each */
 .productos {
+  /* extend */
   color: #09ff00; }
 
 .productos:after {
-  background-color: #09ff00; }
+  background-color: #09ff00;
+  /* extend */ }
 
+/* each */
 .proyectos {
+  /* extend */
   color: #03adb3; }
 
 .proyectos:after {
-  background-color: #03adb3; }
+  background-color: #03adb3;
+  /* extend */ }
 
+/* each */
 .servicios {
+  /* extend */
   color: #0003b1; }
 
 .servicios:after {
-  background-color: #0003b1; }
+  background-color: #0003b1;
+  /* extend */ }
+
+/* each */
+.contacto {
+  /* extend */
+  color: #6e2d6b; }
+
+.contacto:after {
+  background-color: #6e2d6b;
+  /* extend */ }
 
 .contacto {
   color: #ff26f4; }
 
 .contacto:after {
-  background-color: #ff26f4; }
+  /* map-get */ }
 
 * {
   font-family: 'roboto', sans-serif;
-  padding: 0px;
+  /* mixin, se aplica en global */
   margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-size: 1rem; }
 
@@ -48,11 +90,11 @@ article {
   height: 100%;
   overflow: hidden; }
 
-.hover-underline-animation {
-  display: inline-block;
-  position: relative; }
-
-.hover-underline-animation:after {
+/* .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  } */
+/* .hover-underline-animation:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -61,13 +103,12 @@ article {
   bottom: 0;
   left: 0;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
-.animation:hover .hover-underline-animation:after {
-  /* Cuando esta hover el anchor, le aplico la animacion al span */
+  transition: transform 0.25s ease-out;
+} */
+/* .animation:hover .hover-underline-animation:after {          Cuando esta hover el anchor, le aplico la animacion al span
   transform: scaleX(1);
-  transform-origin: bottom left; }
-
+  transform-origin: bottom left;
+} */
 .presentacion {
   margin-top: 15px;
   display: flex;
