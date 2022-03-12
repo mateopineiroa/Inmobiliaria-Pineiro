@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+    font-family: 'roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 70vw;                    /* Media queries */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+
+}
+
+header, footer {
+    display: flex;
+    align-items: center;            /* Alineo verticalmente */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    background: #403A3A;
+}
+h1 {
+    color: #D41200;
+    font-weight: 600;        /* Agregue 100 y 500 pero 200, 400 y 600 son tres diferentes (?) */   
+    display: inline-block;
+}
+
+nav, ul, li, h3 {
+    display: inline-block;            /* Todos los elementos block deben ser inline */
+}
+
+li, h1 {
+    padding: 20px;                  
+    margin: 20px 15px;
+    background: #BFB4B0;
+    border-radius: 10px;
+}
+
+/* Luego con flexbox pego mi menu a la derecha y alineo el texto verticalmente*/
+
+.title {
+    margin: 20px;
+}
+
+a{
+    color: black;
+}
+
+img, iframe {
+    width: 100%;
+    max-width: fit-content;
+}
+
+article {
+    padding: 2rem;
+}
+
+section {
+    background: #e2e2e2;
+    margin: 1rem .5rem 1rem 0rem;
+} 
+aside {
+    background: #e2e2e2;
+    margin: 1rem 0 1rem .5rem;
+}
+form {
+    padding: 0rem 1rem;
+}
+input,button {
+    padding: .5rem;
+    margin: .5rem;
+}
+
+/* Media queries??? botón para abrir menú en cierto tamaño? */
+
+.side-bar {                 /* Uso class pues solo productos va a tener sidebar */
+    display: grid;
+    grid-template-columns: 4fr 1fr;         /* Los elementos se acomodan en orden */
+}
