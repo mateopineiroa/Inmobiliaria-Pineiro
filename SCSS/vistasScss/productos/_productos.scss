@@ -1,0 +1,47 @@
+aside {
+    background: rgb(248,249,250);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+} 
+.articulos {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 15px;
+}
+.search {
+    padding: 10px;
+    margin: 0px auto 0px auto;
+    width: 90%;
+}
+
+.articulo {
+    transition: all .5s;
+        img {
+                width: 100%;
+                max-width: fit-content;
+            }
+}
+
+.articulo:hover {
+    transform: scale(1.3);
+}
+
+.modal-body img {
+    width: 100%;
+    max-width: fit-content;
+    
+}
+
+.main {                 /* Uso class pues solo productos va a tener sidebar */
+    display: grid;
+    grid-template-columns: 2fr 1fr;         /* Los elementos se acomodan en orden */
+    
+    grid-gap: 15px;
+    margin: 15px 0px;
+}
+
