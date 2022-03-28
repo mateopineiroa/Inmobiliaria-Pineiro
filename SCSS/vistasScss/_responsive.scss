@@ -60,7 +60,9 @@
     }
     .presentacion {
         flex-wrap: wrap;
-    
+    }
+    .presentacion-texto{
+        margin-top: 20px !important;
     }
 }
 @media screen and (max-width:515px){

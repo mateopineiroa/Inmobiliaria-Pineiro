@@ -49,7 +49,7 @@ article {
 .presentacion-texto {
   margin: 20px; }
 
-.presentacion-img {
+.presentacion img {
   width: 100%;
   max-width: 400px; }
 
@@ -155,7 +155,9 @@ form {
     display: block;
     /* Cambia display none a display block de child cuando hover */ }
   .presentacion {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .presentacion-texto {
+    margin-top: 20px !important; } }
 
 @media screen and (max-width: 515px) {
   .search {
