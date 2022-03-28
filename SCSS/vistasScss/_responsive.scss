@@ -24,9 +24,7 @@
     }
     .articulos {
         padding: 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-area: b;
+        justify-content:start;
     }
     
     .mainmenubtn {
