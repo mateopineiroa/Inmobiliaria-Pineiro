@@ -42,7 +42,7 @@
     </nav>
   </header>
   <div class="main">
-	  <article class="articulos">
+	  <article class="">
       <div class="articulo uno">
 	  		<img src="../img/casa1.jpeg" alt="casa" data-bs-toggle="modal" data-bs-target="#exampleModal">
 	    </div>
@@ -89,9 +89,15 @@
     <aside class="pt-3">
 		  <h1 class="fs-3">Productos</h1>
       <input type="text" class="search mb-2 py-1" placeholder="Buscador">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccione el barrio</option>
+        <option value="1">La Teja</option>
+        <option value="2">Cuarenta Semanas</option>
+        <option value="3">Carrasco</option>
+      </select>
       <div class="form-check form-switch">
 		  	<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        <label class="form-check-label" for="flexSwitchCheckDefault">Filtrar por precio</label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="checkbox1">
