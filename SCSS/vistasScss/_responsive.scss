@@ -24,9 +24,7 @@
     }
     .articulos {
         padding: 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-area: b;
+        justify-content:start;
     }
     
     .mainmenubtn {
@@ -60,8 +58,22 @@
     }
     .presentacion {
         flex-wrap: wrap;
-    
     }
+    .presentacion-texto{
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width:767px){
+    .accordion-button{
+        
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+        }    
+    }
+
 }
 @media screen and (max-width:515px){
     .search {
@@ -71,4 +83,9 @@
     .social {
         margin-top: 20px !important;    /* Pongo important para pisar bootstrap */
     }
+
+    article {
+
+        overflow: hidden;
+    } 
 }

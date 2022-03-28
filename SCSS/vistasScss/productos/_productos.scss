@@ -6,12 +6,10 @@ aside {
 } 
 .articulos {
     padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-items: center;
-    grid-gap: 15px;
+    justify-content: start;
 }
 .search {
     padding: 10px;
@@ -20,7 +18,10 @@ aside {
 }
 
 .articulo {
+    padding: 5px 5px;
     transition: all .5s;
+    width: 25%;
+    min-width: 200px;
         img {
                 width: 100%;
                 max-width: fit-content;

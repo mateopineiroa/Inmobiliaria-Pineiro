@@ -1,10 +1,11 @@
+$accordion-border-color: shade-color(rgb(0, 151, 0), 10%);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
-@import "./entregaSass/elementos.scss";
 @import "./vistasScss/global";
 @import "./vistasScss/navbar";
 @import "./vistasScss/articles";
 @import "./vistasScss/index/introduction";
 @import "./vistasScss/productos/productos";
+@import "./vistasScss/proyectos/proyectos";
 @import "./vistasScss/contacto/contacto";
-@import "./vistasScss/carrousel";
+@import "./vistasScss/index/carrousel";
 @import "./vistasScss/responsive";
