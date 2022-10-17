@@ -1,0 +1,22 @@
+{
+  "products": [
+    { 
+      "category": "Casa",
+      "title": "Gran casa de dos dormitorios en malvin",
+      "price": "321321",
+      "hood": "Malvin",
+      "garage": true,
+      "bedrooms": 3,
+      "description": "Descripcion extensa"
+    },
+    {
+      "category": "",
+      "title": "",
+      "price": "",
+      "hood": "",
+      "garage": 0,
+      "bedrooms": 0,
+      "description": ""
+    }
+  ]
+}

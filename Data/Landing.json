@@ -1,0 +1,28 @@
+{
+  "inicioSlogan": "Tu asesor inmobiliario de confianza",
+  "inicioDescription": "Somos una empresa familiar con mas de 30 años en el mercado inmobiliario.",
+  "inicioServicios": [
+    {
+      "name": "Compra de casas",
+      "description": "Te asesoramos en la busqueda de tu próximo hogar."
+    },
+    {
+      "name": "Venta de casas",
+      "description": "Optimizamos la venta de tu propiedad."
+    },
+    {
+      "name": "Agilizamos las transacciones",
+      "description": "Optimizamos el proceso de negociación entre ambas partes."
+    }
+  ],
+  "inicioPropiedadesDestacadas": [
+    {  
+      "name": "Nombre de casa",
+      "description": "Breve descripcion de casa."
+    },
+    {
+      "name": "Nombre de casa",
+      "description": "Breve descripcion de casa."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "header-title": "Inmobiliaria Aguilera",
+  "header-pages": ["Inicio", "Productos", "Proyectos", "Servicios", "Contacto"],
+  "footer-ubication": "Montevideo, Uruguay",
+  "footer-phone": "26132242",
+  "footer-whatsapp": "+598 99 205 929",
+  "footer-linkMaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419252.5080740382!2d-56.51662628275301!3d-34.82077715211968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1666032850235!5m2!1ses!2suy",
+  "footer-socialMedia": {
+    "instagram": "https://www.instagram.com/aguilerainmuebles/",
+    "facebook": "https://www.facebook.com/aguilerainmuebles/",
+    "linkedin": ""
+  }
+}

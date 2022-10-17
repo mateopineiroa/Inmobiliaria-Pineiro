@@ -1,0 +1,17 @@
+{
+  "services-elements": [
+    {
+      "name": "Venta de propiedades",
+      "description": "Le conseguimos clientes para comprar su propiedad."
+    },
+    {
+      "name": "Compra de propiedades",
+      "description": "Le ayudamos a encontrar su próximo hogar."
+    },
+    {
+      "name": "Tasaciones",
+      "description": "Cotizamos su propiedad para que se venda lo mas rápido posible al precio más justo."
+    }
+  ]
+
+}

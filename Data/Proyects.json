@@ -1,0 +1,25 @@
+{
+  "proyects-title": "Edificios Innovadores",
+  "proyects-description": "Promocionamos proyectos de vivienda con altos estandares de calidad. Sus instalaciones garantizan su confort y el estilo de vida que siempre quisiste.",
+  "proyects-elements": [
+    {
+      "name": "Edificio 1",
+      "description": "Desarrollo",
+      "amenities": ["", "", "", "", ""],
+      "features": ["", "", "", "", ""]
+    },
+    {
+      "name": "Edificio 2",
+      "description": "Desarrollo",
+      "amenities": ["", "", "", "", ""],
+      "features": ["", "", "", "", ""]
+    },
+    {
+      "name": "Edificio 3",
+      "description": "Desarrollo",
+      "amenities": ["", "", "", "", ""],
+      "features": ["", "", "", "", ""]
+    }
+  ]
+
+}
